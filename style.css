@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 20px;
+}
+
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Left Section */
+.left-section {
+    background-color: rgb(133, 165, 192);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 4px solid #a8bdda;
+}
+
+.left-section h1 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+h3 {
+    font-size: 18px;
+    padding: 2%;
+    margin: 20px 0 10px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #e63946;
+}
+
+/* Right Section */
+.right-section {
+    padding: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+button {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    padding: 10px;
+    background-color: #70416a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #c778b6;
+}
+
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: auto;
+    background-color: rgb(170, 135, 161);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+fieldset {
+    border: 2px solid rgb(78, 17, 78);
+    border-radius: 8px;
+    padding: 20px;
+    background-color: rgb(204, 169, 189);
+}
+
+legend, label {
+    color: black;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    .resume-container {
+        width: 90%;
+        padding: 30px;
+    }
+    
+    .profile-picture {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (min-width: 992px) {
+    .resume-container {
+        flex-direction: row;
+    }
+    
+    .left-section {
+        width: 35%;
+        border-right: 5px solid #a8bdda;
+    }
+    
+    .right-section {
+        width: 65%;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+}
